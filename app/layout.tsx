@@ -12,6 +12,10 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: 'Hutliv - Business Solutions',
   description: 'Professional business solutions including LeadBuddie and Hutliv Invoice',
+  icons: {
+    icon: '/hutliv-logo.png',
+    apple: '/hutliv-logo.png',
+  },
 }
 
 export default function RootLayout({

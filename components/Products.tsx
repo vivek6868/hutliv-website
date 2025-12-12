@@ -127,13 +127,25 @@ export default function Products() {
                     </div>
                   )}
 
-                  <button
-                    onClick={() => scrollToSection(product.link.replace('#', ''))}
-                    className={`w-full py-3 ${product.accentColor === 'sky-400' ? 'bg-blue-600 hover:bg-blue-700 text-white shadow-md shadow-blue-500/25' : 'bg-emerald-600 hover:bg-emerald-700 text-white shadow-md shadow-emerald-500/25'} rounded-lg font-semibold transition-colors flex items-center justify-center gap-2 group/btn`}
-                  >
-                    Learn more about {product.name}
-                    <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-                  </button>
+                  {product.name === 'LeadBuddie' ? (
+                    <a
+                      href="https://www.leadbuddie.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`w-full py-3 ${product.accentColor === 'sky-400' ? 'bg-blue-600 hover:bg-blue-700 text-white shadow-md shadow-blue-500/25' : 'bg-emerald-600 hover:bg-emerald-700 text-white shadow-md shadow-emerald-500/25'} rounded-lg font-semibold transition-colors flex items-center justify-center gap-2 group/btn`}
+                    >
+                      Learn more about {product.name}
+                      <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                    </a>
+                  ) : (
+                    <button
+                      onClick={() => scrollToSection(product.link.replace('#', ''))}
+                      className={`w-full py-3 ${product.accentColor === 'sky-400' ? 'bg-blue-600 hover:bg-blue-700 text-white shadow-md shadow-blue-500/25' : 'bg-emerald-600 hover:bg-emerald-700 text-white shadow-md shadow-emerald-500/25'} rounded-lg font-semibold transition-colors flex items-center justify-center gap-2 group/btn`}
+                    >
+                      Learn more about {product.name}
+                      <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                    </button>
+                  )}
                 </div>
               )
             })}

@@ -25,6 +25,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="facebook-domain-verification"
+          content="pgwrvljg44sl63dyv6d8rfcj7yxj38"
+        />
+      </head>
       <body className={`${inter.className} ${playfair.variable}`}>{children}</body>
     </html>
   )

@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="mb-6 md:mb-0">
             <h3 className="text-xl font-bold text-gray-900 mb-2">Hutliv</h3>
             <p className="text-sm text-gray-600">
-              © {new Date().getFullYear()} Hutliv. All rights reserved.
+              © {new Date().getFullYear()} Hutliv Technologies. All rights reserved.
             </p>
           </div>
           <div className="flex flex-wrap gap-6 justify-center md:justify-end">

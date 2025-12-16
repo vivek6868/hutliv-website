@@ -5,13 +5,13 @@ export default function About() {
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6 tracking-tight">
-              About Hutliv
+              About Hutliv Technologies
             </h2>
           </div>
 
           <div className="prose prose-lg max-w-none">
             <p className="text-xl text-gray-700 leading-relaxed mb-6">
-              Hutliv is a modern software company focused on building practical, AI-powered tools that help small and medium service businesses grow.
+              Hutliv Technologies is a modern software company focused on building practical, AI-powered tools that help small and medium service businesses grow.
             </p>
             
             <p className="text-xl text-gray-700 leading-relaxed mb-6">
